@@ -1,0 +1,24 @@
+=== Tab Shortcuts ===
+
+    !
+        -> create the basic html declaration
+
+    .[class_name]
+        -> creates a div with a class name
+
+    spann.[class_name]
+        -> creates a span with a class name
+
+    a#[id_name]
+        -> creates an anchor element with id name
+
+    .[class_name]#[id_name]
+        -> creates a div with a class name and id name
+
+=== Other Shortcuts ===
+
+    Ctrl + /
+        -> Comment out/in the selected lines
+    
+    Shift + Alt + Down Arrow Key
+        -> copies the current line and pastes it below
