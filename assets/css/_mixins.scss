@@ -1,0 +1,17 @@
+@mixin flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin logo-gradient {
+    background-color: $logo-color-2;
+    background-image: linear-gradient(177deg, $logo-color-1 0%, $logo-color-2 20%, $logo-color-3 100%);
+    background-size: 100%;
+}
+
+@mixin webkit-moz-clip {
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
