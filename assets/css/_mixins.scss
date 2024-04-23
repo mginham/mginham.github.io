@@ -15,3 +15,20 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+
+@mixin narvbar-container-general {
+    display: flex;
+    justify-content: space-between;
+    height: $navbar-height;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+}
+
+@mixin header-container-general {
+    @include flex-align-center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: $header-height;
+}
