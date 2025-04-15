@@ -171,7 +171,7 @@ class NavBar extends HTMLElement {
                             <a href="/index.html" class="navbar__links">Home</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="/index.html" class="navbar__links">About</a>
+                            <a href="/about.html" class="navbar__links">About</a>
                         </li>
                         <li class="navbar__item">
                             <a href="/" class="navbar__links">Experience</a>
