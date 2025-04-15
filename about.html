@@ -8,36 +8,13 @@
     </head>
     <body>
         <!-- Navigation Bar -->
-        <nav class="navbar">
-            <div class="navbar__container">
-                <a href="/" id="navbar__logo"><i class="fa-solid fa-m"></i><i class="fa-solid fa-g"></i></a>
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="/index.html" class="navbar__links">Home</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/about.html" class="navbar__links">About</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/" class="navbar__links">Experience</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/" class="navbar__links">Projects</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <navbar-component></navbar-component>
 
         <!-- Header -->
         <div class="header">
             <div class="header__container">
                 <div class="header__content">
-                    <h1>About</h1>
+                    <h1>About Me</h1>
                 </div>
             </div>
         </div>
@@ -53,45 +30,15 @@
                 </div> -->
             </div>
         </section>
-
-        <!-- Experience -->
-        <!-- <section id="experience__section">
-            <div class="experience__container">
-                <h1>Experience</h1>
-            </div>
-        </section> -->
-
-        <!-- Projects -->
-        <!-- <section id="projects__section">
-            <div class="projects__container">
-                <h1>Projects</h1>
-            </div>
-        </section> -->
         
         <!-- Footer -->
-        <div class="footer__container">
-            <hr>
-            <div class="social__media">
-                <div class="social__media--wrapper">
-                    <div class="social__icons">
-                        <a href="mailto: meganginham@gmail.com" class="social__icon--link" target="_blank">
-                            <i class="fa-regular fa-envelope"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/megan-ginham/" class="social__icon--link" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/mginham" class="social__icon--link" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <p class="website__rights">© Copyright 2025 . Site designed and developed by Megan Ginham</p>
-        </div>
+        <footer-component></footer-component>
         
         <!-- Scripts -->
         <script src="assets/js/app.js"></script>
         <script src="https://kit.fontawesome.com/a4881c2bb2.js" crossorigin="anonymous"></script>
+        <script src="assets/components/navbar.js" type="text/javascript" defer></script>
+        <script src="assets/components/footer.js" type="text/javascript" defer></script>
 
     </body>
 </html>
