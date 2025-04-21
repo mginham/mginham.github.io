@@ -19,7 +19,7 @@ class NavBar extends HTMLElement {
                     top: 0;
                     z-index: 999;
                 }
-                
+
                 .navbar__container {
                     display: flex;
                     justify-content: space-between;
@@ -30,7 +30,7 @@ class NavBar extends HTMLElement {
                     margin: 0 auto;
                     padding: 0 50px;
                 }
-                
+
                 #navbar__logo {
                     background-color: #FFB200;
                     background-image: linear-gradient(177deg, #FF9300 0%, #FFB200 20%, #FFFBD4 100%);
@@ -45,22 +45,22 @@ class NavBar extends HTMLElement {
                     text-decoration: none;
                     font-size: 2rem;
                 }
-                
+
                 .fa-gem {
-                    margin-right: 0.5rem;   
+                    margin-right: 0.5rem;
                 }
-                
+
                 .navbar__menu {
                     display: flex;
                     align-items: center;
                     text-align: center;
                     list-style: none;
                 }
-                
+
                 .navbar__item {
                     height: 80px;
                 }
-                
+
                 .navbar__links {
                     color: #fff;
                     display: flex;
@@ -70,12 +70,12 @@ class NavBar extends HTMLElement {
                     padding: 0 1rem;
                     height: 100%;
                 }
-                
+
                 .navbar__links:hover {
                     color: #FFB200;
                     transition: all 0.3s ease;
                 }
-                
+
                 @media screen and (max-width: 960px) {
                     .navbar__container {
                         display: flex;
@@ -86,7 +86,7 @@ class NavBar extends HTMLElement {
                         max-width: 1300px;
                         padding: 0;
                     }
-                
+
                     .navbar__menu {
                         display: grid;
                         grid-template-columns: auto;
@@ -100,7 +100,7 @@ class NavBar extends HTMLElement {
                         z-index: -1;
                         background: #131313;
                     }
-                
+
                     .navbar__menu.active {
                         top: 100%;
                         opacity: 1;
@@ -109,11 +109,11 @@ class NavBar extends HTMLElement {
                         height: 50vh;
                         font-size: 1.6rem;
                     }
-                
+
                     #navbar__logo {
                         padding-left: 25px;
                     }
-                
+
                     .navbar__toggle .bar {
                         width: 25px;
                         height: 3px;
@@ -121,38 +121,38 @@ class NavBar extends HTMLElement {
                         transition: all 0.3s ease-in-out;
                         background: #fff;
                     }
-                
+
                     .navbar__item {
                         width: 100%;
                     }
-                
+
                     .navbar__links {
                         text-align: center;
                         padding: 2rem;
                         width: 100%;
                         display: table;
                     }
-                
+
                     #mobile-menu {
                         position: absolute;
                         top: 20%;
                         right: 5%;
                         transform: translate(5%, 20%);
                     }
-                
+
                     .navbar__toggle .bar {
                         display: block;
                         cursor: pointer;
                     }
-                
+
                     #mobile-menu.is-active .bar:nth-child(2) {
                         opacity: 0;
                     }
-                
+
                     #mobile-menu.is-active .bar:nth-child(1) {
                         transform: translateY(8px) rotate(45deg);
                     }
-                
+
                     #mobile-menu.is-active .bar:nth-child(3) {
                         transform: translateY(-8px) rotate(-45deg);
                     }
@@ -171,13 +171,13 @@ class NavBar extends HTMLElement {
                             <a href="/index.html" class="navbar__links">Home</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="/about.html" class="navbar__links">About</a>
+                            <a href="#about__section" class="navbar__links">About</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="/" class="navbar__links">Experience</a>
+                            <a href="#experience__section" class="navbar__links">Experience</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="/" class="navbar__links">Projects</a>
+                            <a href="#projects__section" class="navbar__links">Projects</a>
                         </li>
                     </ul>
                 </div>
