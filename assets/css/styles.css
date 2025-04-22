@@ -24,6 +24,7 @@ body {
 
 .content__section {
     display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1300px;
     margin: 100px auto;
@@ -149,18 +150,35 @@ body {
 .project__tile {
     height: 30vh;
     width: 20vw;
+    margin: 10px 0;
 }
 
 .project__thumbnail {
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: 100% 0;
     border: 1px solid var(--page-color-1);
     border-radius: 25px;
     padding: 5px;
+    object-fit: cover;
+
 }
 
 .project__thumbnail:hover {
     box-shadow: 0 0 2px 1px #ddd;
   }
+
+.project__thumbnail.penguin_animation {
+    object-position: 0% 0%;
+}
+
+.project__thumbnail.coming__soon {
+    object-position: 40% 50%;
+}
+
+.projects__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
