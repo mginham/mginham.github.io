@@ -1,18 +1,34 @@
 
 /* General */
 
+:root {
+    --page-color-1: #222831;
+    --logo-color-1: #FF9300;
+    --logo-color-2: #FFB200;
+    --logo-color-3: #FFFBD4;
+    --secondary-color-1: #37B5B6;
+    --primary-text-color: #fff;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-text-color);
 }
+
+body {
+    background-color: var(--page-color-1);
+}
+
+.content__section {
+    display: flex;
+}
+
+
 
 /* Header Section */
-
-.header {
-    background-color: #222831;
-}
 
 .header__container {
     display: flex;
@@ -20,7 +36,6 @@
     justify-self: center;
     margin: 0 auto;
     height: 70vh;
-    background-color: #222831;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -29,8 +44,8 @@
 
 .header__content h1 {
     font-size: 4rem;
-    background-color: #FFB200;
-    background-image: linear-gradient(177deg, #FF9300 0%, #FFB200 20%, #FFFBD4 100%);
+    background-color: var(--logo-color-2);
+    background-image: linear-gradient(177deg, var(--logo-color-1) 0%, var(--logo-color-2) 20%, var(--logo-color-3) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -40,7 +55,7 @@
 
 .header__content h2 {
     font-size: 2rem;
-    background-color: #37B5B6;
+    background-color: var(--secondary-color-1);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -52,7 +67,6 @@
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #fff;
 }
 
 
@@ -107,19 +121,9 @@
 }
 
 
+
 /* About Section */
 
 .about__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
-.about__img--container {
-    text-align: center;
 }
-
-#about__img {
-    height: 80%;
-    width: 80%;
-}
-
