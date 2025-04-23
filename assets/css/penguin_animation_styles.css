@@ -272,6 +272,17 @@
     border-radius: 50%;
     width: 2000px;
     height: 200px;
-    bottom: 200px;
+    top: 200px;
     left: 400px;
+  }
+
+  .return_btn {
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 10;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
   }
