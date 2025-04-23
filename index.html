@@ -8,7 +8,30 @@
     </head>
     <body>
         <!-- Navigation Bar -->
-        <navbar-component></navbar-component>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo"><i class="fa-solid fa-m"></i><i class="fa-solid fa-g"></i></a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/index.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about__section" class="navbar__links">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#experience__section" class="navbar__links">Experience</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#projects__section" class="navbar__links">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <!-- Header -->
         <div class="header">
@@ -24,34 +47,49 @@
         </div>
 
         <!-- About -->
-        <!-- <section id="about__section">
+        <!-- <section id="about__section" class="content__section">
             <div class="about__container">
                 <div class="about__content">
-                    <h1>About Me</h1>
-                </div>
-                <div class="about__img--container">
-                    <img src="https://drive.google.com/thumbnail?id=1o1v4vlOGSkNkH3Rx46ZdmgKvB4vXry8g&sz=w1000" alt="pic" id="main__img">
+                    <h3 class="section__header">About Me</h3>
+                    <p>I have always had a passion for solving puzzles and building solutions and that is what drew me into the world of software. I am so excited to continue building my career and learning new skills!</p>
                 </div>
             </div>
         </section> -->
 
         <!-- Experience -->
-        <!-- <section id="experience__section">
+        <!-- <section id="experience__section" class="content__section">
             <div class="experience__container">
-                <h1>Experience</h1>
+                <h3 class="section__header">Experience</h3>
+                <ul class="experience_list">
+                    <li class="exp_list_item">Scotiabank (2023-Present)</li>
+                </ul>
             </div>
         </section> -->
 
         <!-- Projects -->
-        <!-- <section id="projects__section">
+        <section id="projects__section" class="content__section">
+            <h3 class="section__header">Projects</h3>
             <div class="projects__container">
-                <h1>Projects</h1>
+                <div class="project__tile">
+                    <a href="penguin_animation.html">
+                        <img src="\assets\images\Penguin_preview_narrow.png" alt="Penguin Animation Preview" class="project__thumbnail penguin_animation">
+                    </a>
+                    <p class="project__thumbnail__text">Penguin Animation</p>
+                </div>
+                <div class="project__tile">
+                    <img src="\assets\images\Coming_soon.png" alt="Coming Soon Message" class="project__thumbnail coming__soon">
+                    <p class="project__thumbnail__text">Coming Soon!</p>
+                </div>
+                <div class="project__tile">
+                    <img src="\assets\images\Coming_soon.png" alt="Coming Soon Message" class="project__thumbnail coming__soon">
+                    <p class="project__thumbnail__text">Coming Soon!</p>
+                </div>
             </div>
-        </section> -->
-        
+        </section>
+
         <!-- Footer -->
         <footer-component></footer-component>
-        
+
         <!-- Scripts -->
         <script src="assets/js/app.js"></script>
         <script src="https://kit.fontawesome.com/a4881c2bb2.js" crossorigin="anonymous"></script>

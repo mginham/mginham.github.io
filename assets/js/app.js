@@ -1,3 +1,5 @@
+// Controls hamburger menu on main page
+
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 
