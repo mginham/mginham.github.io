@@ -343,10 +343,14 @@ body {
     margin: 5px 10px 0 0;
 }
 
+.project__thumbnail.coming__soon {
+    object-position: 40% 50%;
+}
+
 .project__thumbnail.penguin_animation {
     object-position: 0% 0%;
 }
 
-.project__thumbnail.coming__soon {
-    object-position: 40% 50%;
+.project__thumbnail.MR_demo {
+    object-position: 40% 0%;
 }
