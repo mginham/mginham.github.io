@@ -295,7 +295,32 @@ body {
 /* About Section */
 
 .about__container {
+    width: 100%;
+}
 
+.about_grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.about_text {
+    width: 60%;
+    align-content: center;
+}
+
+.about_image {
+    height: 400px;
+    width: 40%;
+    align-content: center;
+}
+
+.about_photo {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    object-fit: cover;
+    object-position: 0% 15%;
 }
 
 
