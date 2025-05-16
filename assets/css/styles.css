@@ -309,9 +309,22 @@ body {
 }
 
 .about_image {
+    position: relative;
     height: 400px;
     width: 40%;
     align-content: center;
+}
+
+.about_image::after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border: 2px solid gray;
+    border-radius: 25px;
+    left: 40px;
+    top: 33px;
+    z-index: -1;
 }
 
 .about_photo {
