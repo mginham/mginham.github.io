@@ -338,6 +338,78 @@ body {
 
 
 
+/* Education Section */
+
+.education_list {
+    margin: 0px 150px;
+}
+
+.education_list li {
+    list-style: none;
+}
+
+.edu_list_item {
+    margin-bottom: 20px;
+}
+
+.edu_item_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.edu_item_sub {
+    font-style: italic;
+}
+
+
+
+/* Exprience Section */
+
+.experience_list {
+    margin: 0px 150px;
+}
+
+.experience_list li {
+    list-style: none;
+}
+
+.exp_list_item {
+    margin-bottom: 20px;
+}
+
+.exp_item_head {
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: var(--logo-color-2);
+    background-image: linear-gradient(177deg, var(--logo-color-1) 0%, var(--logo-color-2) 20%, var(--logo-color-3) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.exp_item_sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.10rem;
+}
+
+.position_name {
+    color: var(--secondary-color-1);
+}
+
+.exp_body_list li {
+    list-style: square;
+    margin-left: 40px;
+}
+
+
+
 /* Projects Section */
 
 .projects__container {
