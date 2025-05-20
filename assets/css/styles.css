@@ -306,6 +306,7 @@ body {
 .about_text {
     width: 60%;
     align-content: center;
+    padding-right: 15px;
 }
 
 .about_image {
@@ -382,13 +383,10 @@ body {
 .exp_item_head {
     font-weight: bold;
     font-size: 1.5rem;
-    background-color: var(--logo-color-2);
-    background-image: linear-gradient(177deg, var(--logo-color-1) 0%, var(--logo-color-2) 20%, var(--logo-color-3) 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+}
+
+.company_name {
+    color: var(--logo-color-2);
 }
 
 .exp_item_sub {
