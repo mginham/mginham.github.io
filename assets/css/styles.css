@@ -306,6 +306,7 @@ body {
 .about_text {
     width: 60%;
     align-content: center;
+    padding-right: 15px;
 }
 
 .about_image {
@@ -334,6 +335,75 @@ body {
     padding: 10px;
     object-fit: cover;
     object-position: 0% 15%;
+}
+
+
+
+/* Education Section */
+
+.education_list {
+    margin: 0px 150px;
+}
+
+.education_list li {
+    list-style: none;
+}
+
+.edu_list_item {
+    margin-bottom: 20px;
+}
+
+.edu_item_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.edu_item_sub {
+    font-style: italic;
+}
+
+
+
+/* Exprience Section */
+
+.experience_list {
+    margin: 0px 150px;
+}
+
+.experience_list li {
+    list-style: none;
+}
+
+.exp_list_item {
+    margin-bottom: 20px;
+}
+
+.exp_item_head {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.company_name {
+    color: var(--logo-color-2);
+}
+
+.exp_item_sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.10rem;
+}
+
+.position_name {
+    color: var(--secondary-color-1);
+}
+
+.exp_body_list li {
+    list-style: square;
+    margin-left: 40px;
 }
 
 
