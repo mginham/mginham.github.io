@@ -334,7 +334,7 @@ body {
     border-radius: 25px;
     padding: 10px;
     object-fit: cover;
-    object-position: 0% 15%;
+    object-position: 0% 5%;
 }
 
 
@@ -465,4 +465,8 @@ body {
 
 .project__thumbnail.MR_demo {
     object-position: 40% 0%;
+}
+
+.project__thumbnail.budget_app {
+    object-position: 0% 100%;
 }
