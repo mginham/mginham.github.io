@@ -470,3 +470,7 @@ body {
 .project__thumbnail.budget_app {
     object-position: 0% 100%;
 }
+
+.project__thumbnail.collab_editor {
+    object-position: 0% 10%;
+}
