@@ -67,8 +67,8 @@
         "image": "Penguin_preview_narrow.png",
         "imagePosition": "object-[center_top]",
         "link": "Penguin_Animation.html",
-        "stack": ["HTML", "CSS", "JavaScript"],
-        "description": "An animated penguin created with HTML, CSS, and JavaScript.",
+        "stack": ["HTML", "CSS"],
+        "description": "An animated penguin created with HTML and CSS.",
         "demoVideo": null,
         "github": "https://github.com/mginham/penguin_animation",
         "dateCreated": "2025-04-21"
