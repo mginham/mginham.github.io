@@ -1,10 +1,13 @@
+import React from 'react';
 import headerData from '../content/header.json';
 
 export default function Header() {
     return (
         <header className="flex items-center justify-left h-[85vh] max-w-[1300px] px-5">
             <div className="text-center md:text-left px-2 bg-background text-text-primary">
-                <p className="text-body-lg-sm md:text-body-lg font-semibold">{headerData.intro}</p>
+                <p className="text-body-lg-sm md:text-body-lg font-semibold">
+                    {headerData.intro}
+                </p>
                 
                 {/* Gradient using theme tokens */}
                 <h1 className="text-header-xl-sm md:text-header-xl-md lg:text-header-xl font-bold bg-gradient-to-b from-primary via-primary-medium to-primary-light bg-clip-text text-transparent">
@@ -16,7 +19,7 @@ export default function Header() {
                     {headerData.title}
                 </h2>
 
-                <p className="text-body-lg-sm md:text-body-lg font-semibold">
+                <p className="text-body-lg-sm md:text-body-lg font-semibold whitespace-pre-line">
                     {headerData.description}
                 </p>
             </div>
