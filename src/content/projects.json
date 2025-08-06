@@ -1,5 +1,18 @@
 [
     {
+        "id": "data-pipeline-project",
+        "title": "Data Pipeline Project",
+        "image": "undraw_data-analysis_b7cp - Copy.png",
+        "imagePosition": "object-[center_center]",
+        "zoom": 1.2,
+        "link": "Data_Pipeline_Project.html",
+        "stack": ["PySpark", "PostgreSQL", "Airflow", "Docker"],
+        "description": "A data pipeline project demonstrating ETL workflows and cloud migration analysis using Python, SQL, and Airflow.",
+        "demoVideo": null,
+        "github": "https://github.com/mginham/data-pipeline-project",
+        "dateCreated": "2025-08-04"
+    },
+    {
         "id": "collab-editor",
         "title": "Real-Time Collaborative Editor",
         "image": "Collab_Editor_Preview.png",
