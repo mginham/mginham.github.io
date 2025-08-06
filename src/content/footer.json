@@ -1,0 +1,20 @@
+{
+    "icons": [
+        {
+            "href": "mailto:meganginham@gmail.com",
+            "label": "Email",
+            "icon": "mail"
+        },
+        {
+            "href": "https://www.linkedin.com/in/megan-ginham/",
+            "label": "LinkedIn",
+            "icon": "linkedin"
+        },
+        {
+            "href": "https://github.com/mginham",
+            "label": "GitHub",
+            "icon": "github"
+        }
+    ],
+    "copyright": "© Copyright 2025 . Site designed and developed by Megan Ginham"
+}
