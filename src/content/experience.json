@@ -1,0 +1,37 @@
+[
+    {
+        "company": "Scotiabank",
+        "position": "Data Analyst",
+        "date": "(2023-2025)"
+    },
+    {
+        "company": "Blackstone Property Management Inc.",
+        "position": "Summer Intern",
+        "date": "(Summer 2022)"
+    },
+    {
+        "company": "Hack Western",
+        "position": "Logistics & Sponsorship Organizer",
+        "date": "(2022-2023)"
+    },
+    {
+        "company": "Mattamy Homes",
+        "position": "Software Consultant",
+        "date": "(2021-2022)"
+    },
+    {
+        "company": "Alberta Energy Regulator",
+        "position": "Data Analyst",
+        "date": "(Summer 2021)"
+    },
+    {
+        "company": "Western Engineering Concrete Canoe Association",
+        "position": "Logistics Captain",
+        "date": "(2020-2021)"
+    },
+    {
+        "company": "Western Engineering Concrete Canoe Association",
+        "position": "Head of Software Development",
+        "date": "(2019-2020)"
+    }
+]

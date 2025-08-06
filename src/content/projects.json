@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Real-Time Collaborative Editor",
+        "image": "Collab_Editor_Preview.png",
+        "link": "Collab_Editor_Demo.html",
+        "stack": ["React", "Firestore", "Node.js", "WebSocket", "Lodash", "UUID"]
+    },
+    {
+        "title": "Personal Budgeting App",
+        "image": "Budget_App_Preview.png",
+        "link": "Budget_App_Demo.html",
+        "stack": ["React", "Vite", "Material UI", "Firestore", "JavaScript"]
+    },
+    {
+        "title": "Mixed Reality Game Demo",
+        "image": "mixed_reality_preview.png",
+        "link": "MR_demo.html",
+        "stack": ["MS Hololens 2", "Unity", "C#"]
+    },
+    {
+        "title": "Personal Library Site",
+        "image": "library_preview.png",
+        "link": "https://github.com/mginham/Library_App_Website",
+        "stack": ["HTML", "CSS", "JavaScript", "Node", "Express", "MongoDB"],
+        "external": true
+    },
+    {
+        "title": "Penguin Animation",
+        "image": "Penguin_preview_narrow.png",
+        "link": "penguin_animation.html",
+        "stack": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        "title": "Particle Wave Game",
+        "image": "partice_wave_game_preview.png",
+        "link": "Wave_Game_demo.html",
+        "stack": ["Java"]
+    },
+    {
+        "title": "Tic-Tac-Toe Game",
+        "image": "tictactoe_preview.png",
+        "link": "https://github.com/mginham/tic-tac-toe-game-v2",
+        "stack": ["Java", "Swing"],
+        "external": true
+    },
+    {
+        "title": "Coming Soon",
+        "image": "Coming_soon_preview.png",
+        "link": "",
+        "stack": []
+    }
+]

@@ -1,72 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Theme tokens */
+@theme {
+    /* Colors */
+    --color-background: #222831;
+    --color-primary: #FF9300;
+    --color-primary-medium: #FFB200;
+    --color-primary-light: #FFFBD4;
+    --color-secondary: #37B5B6;
+    --color-text-primary: #ffffff;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* Font sizes */
+    --text-header-xl: 4.5rem; /* Desktop */
+    --text-header-xl-md: 3.5rem; /* Tablet */
+    --text-header-xl-sm: 2.5rem; /* Mobile */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    --text-header-lg: 2.5rem; /* Desktop */
+    --text-header-lg-md: 2rem; /* Tablet */
+    --text-header-lg-sm: 1.5rem; /* Mobile */
+
+    --text-body-lg: 1.5rem; /* Desktop */
+    --text-body-lg-sm: 1.25rem; /* Mobile */
+
+    --text-body-md: 1.25rem; /* Desktop */
+    --text-body-md-sm: 1.125rem; /* Mobile */
+
+    --text-body-sm: 1.125rem; /* Desktop */
+    --text-body-sm-sm: 1rem; /* Mobile */
+
+    --text-caption-md: 0.875rem; /* Desktop */
+    --text-caption-md-sm: 0.75rem; /* Mobile */
+
+    --text-caption-sm: 0.75rem; /* Desktop */
+    --text-caption-sm-sm: 0.675rem; /* Mobile */
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+/* Global base styles */
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+    body {
+        background-color: var(--color-background);
+        color: var(--color-text-primary);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 }
