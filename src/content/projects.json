@@ -1,52 +1,100 @@
 [
     {
+        "id": "collab-editor",
         "title": "Real-Time Collaborative Editor",
         "image": "Collab_Editor_Preview.png",
+        "imagePosition": "object-[center_center]",
         "link": "Collab_Editor_Demo.html",
-        "stack": ["React", "Firestore", "Node.js", "WebSocket", "Lodash", "UUID"]
+        "stack": ["React", "Firestore", "Node.js", "WebSocket", "Lodash", "UUID"],
+        "description": "A web app enabling multiple users to edit documents simultaneously in real-time, with live cursor tracking and sync using WebSocket and Firestore.",
+        "demoVideo": "/videos/Collab_Editor_Demo_2025-07-28.mp4",
+        "github": "https://github.com/mginham/real-time-doc-editor",
+        "dateCreated": "2025-07-28"
     },
     {
+        "id": "budget-app",
         "title": "Personal Budgeting App",
         "image": "Budget_App_Preview.png",
+        "imagePosition": "object-[center_bottom]",
         "link": "Budget_App_Demo.html",
-        "stack": ["React", "Vite", "Material UI", "Firestore", "JavaScript"]
+        "stack": ["React", "Vite", "Material UI", "Firestore", "JavaScript"],
+        "description": "A React-based budgeting tool to track expenses, create custom categories, and visualize spending habits with Material UI components.",
+        "demoVideo": "/videos/Budget_App_Demo.mp4",
+        "github": "https://github.com/mginham/budget-app",
+        "dateCreated": "2025-06-11"
     },
     {
+        "id": "mixed-reality-game",
         "title": "Mixed Reality Game Demo",
         "image": "mixed_reality_preview.png",
-        "link": "MR_demo.html",
-        "stack": ["MS Hololens 2", "Unity", "C#"]
+        "imagePosition": "object-[center_top]",
+        "link": "MR_Demo.html",
+        "stack": ["MS Hololens 2", "Unity", "C#"],
+        "description": "An immersive MR game for Microsoft Hololens 2 built in Unity and C#, blending physical and digital interactions.",
+        "demoVideo": "/videos/Target_Jam_Demo.mp4",
+        "github": "",
+        "dateCreated": "2023-03-22"
     },
     {
+        "id": "personal-library-site",
         "title": "Personal Library Site",
         "image": "library_preview.png",
+        "imagePosition": "object-[center_top]",
         "link": "https://github.com/mginham/Library_App_Website",
         "stack": ["HTML", "CSS", "JavaScript", "Node", "Express", "MongoDB"],
-        "external": true
+        "external": true,
+        "description": "A personal library management website built with modern web technologies.",
+        "demoVideo": null,
+        "github": "https://github.com/mginham/Library_App_Website",
+        "dateCreated": "2025-04-30"
     },
     {
+        "id": "penguin-animation",
         "title": "Penguin Animation",
         "image": "Penguin_preview_narrow.png",
-        "link": "penguin_animation.html",
-        "stack": ["HTML", "CSS", "JavaScript"]
+        "imagePosition": "object-[center_top]",
+        "link": "Penguin_Animation.html",
+        "stack": ["HTML", "CSS", "JavaScript"],
+        "description": "An animated penguin created with HTML, CSS, and JavaScript.",
+        "demoVideo": null,
+        "github": "https://github.com/mginham/penguin_animation",
+        "dateCreated": "2025-04-21"
     },
     {
+        "id": "particle-wave-game",
         "title": "Particle Wave Game",
         "image": "partice_wave_game_preview.png",
-        "link": "Wave_Game_demo.html",
-        "stack": ["Java"]
+        "imagePosition": "object-[center_center]",
+        "link": "Wave_Game_Demo.html",
+        "stack": ["Java"],
+        "description": "A Java-based interactive particle wave simulation game focusing on physics and user controls.",
+        "demoVideo": "/videos/Particle_Wave_Game_Demo.mp4",
+        "github": "https://github.com/mginham/particle-wave-game",
+        "dateCreated": "2018-12-31"
     },
     {
+        "id": "tic-tac-toe-game",
         "title": "Tic-Tac-Toe Game",
         "image": "tictactoe_preview.png",
+        "imagePosition": "object-[center_center]",
         "link": "https://github.com/mginham/tic-tac-toe-game-v2",
         "stack": ["Java", "Swing"],
-        "external": true
+        "external": true,
+        "description": "A classic Tic-Tac-Toe game implemented in Java Swing.",
+        "demoVideo": null,
+        "github": "https://github.com/mginham/tic-tac-toe-game-v2",
+        "dateCreated": "2025-05-10"
     },
     {
+        "id": "coming-soon",
         "title": "Coming Soon",
         "image": "Coming_soon_preview.png",
+        "imagePosition": "object-[38%_center]",
         "link": "",
-        "stack": []
+        "stack": [],
+        "description": "More exciting projects on the way!",
+        "demoVideo": null,
+        "github": "",
+        "dateCreated": ""
     }
 ]

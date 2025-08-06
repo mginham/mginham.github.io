@@ -1,9 +1,19 @@
 import { useState, useRef, useEffect } from "react";
+import { HashLink } from 'react-router-hash-link';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef(null);
     const toggleRef = useRef(null);
+    const location = useLocation();
+
+    const handleLogoClick = () => {
+        if (location.pathname === "/") {
+            // If already on homepage, just scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -28,20 +38,21 @@ export default function Navbar() {
         <nav className="navbar sticky top-0 z-50 bg-background h-20 flex items-center">
             <div className="navbar__container flex justify-between items-center w-full max-w-full md:max-w-[1300px] md:mx-auto px-5">
                 {/* Logo */}
-                <a
-                    href="/"
+                <Link
+                    to="/"
+                    onClick={handleLogoClick}
                     id="navbar__logo"
                     className="text-4xl bg-gradient-to-b from-primary via-primary-medium to-primary-light bg-clip-text text-transparent transition-all duration-300 ease-in-out hover:animate-glow cursor-pointer"
                 >
                     MG
-                </a>
+                </Link>
 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex items-center space-x-8 text-text-primary text-lg">
-                    <li><a href="#top" className="hover:text-primary-medium transition-colors">Home</a></li>
-                    <li><a href="#about__section" className="hover:text-primary-medium transition-colors">About</a></li>
-                    <li><a href="#experience__section" className="hover:text-primary-medium transition-colors">Experience</a></li>
-                    <li><a href="#projects__section" className="hover:text-primary-medium transition-colors">Projects</a></li>
+                    <li><HashLink to="/#top" className="hover:text-primary-medium transition-colors">Home</HashLink></li>
+                    <li><HashLink to="/#about__section" className="hover:text-primary-medium transition-colors">About</HashLink></li>
+                    <li><HashLink to="/#experience__section" className="hover:text-primary-medium transition-colors">Experience</HashLink></li>
+                    <li><HashLink to="/#projects__section" className="hover:text-primary-medium transition-colors">Projects</HashLink></li>
                 </ul>
 
                 {/* Mobile Menu Toggle */}
@@ -79,40 +90,40 @@ export default function Navbar() {
                 }`}
             >
                 <li className="w-full text-center">
-                    <a 
-                        href="#top"
+                    <HashLink
+                        to="/#top"
                         onClick={() => setIsOpen(false)}
                         className="block py-3 hover:text-primary-medium"
                     >
                         Home
-                    </a>
+                    </HashLink>
                 </li>
                 <li className="w-full text-center">
-                    <a
-                        href="#about__section"
+                    <HashLink
+                        to="/#about__section"
                         onClick={() => setIsOpen(false)}
                         className="block py-3 hover:text-primary-medium"
                     >
                         About
-                    </a>
+                    </HashLink>
                 </li>
                 <li className="w-full text-center">
-                    <a
-                        href="#experience__section"
+                    <HashLink
+                        to="/#experience__section"
                         onClick={() => setIsOpen(false)}
                         className="block py-3 hover:text-primary-medium"
                     >
                         Experience
-                    </a>
+                    </HashLink>
                 </li>
                 <li className="w-full text-center">
-                    <a
-                        href="#projects__section"
+                    <HashLink
+                        to="/#projects__section"
                         onClick={() => setIsOpen(false)}
                         className="block py-3 hover:text-primary-medium"
                     >
                         Projects
-                    </a>
+                    </HashLink>
                 </li>
             </ul>
         </nav>
