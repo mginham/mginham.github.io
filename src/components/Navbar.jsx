@@ -1,20 +1,40 @@
-import { useState } from "react";
-import { Link } from 'react-router-dom';
+import { useState, useRef, useEffect } from "react";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const menuRef = useRef(null);
+    const toggleRef = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            // If menu is open and click is outside both menu and toggle button, close menu
+            if (
+                isOpen &&
+                menuRef.current &&
+                toggleRef.current &&
+                !menuRef.current.contains(event.target) &&
+                !toggleRef.current.contains(event.target)
+            ) {
+                setIsOpen(false);
+            }
+        }
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isOpen]);
 
     return (
         <nav className="navbar sticky top-0 z-50 bg-background h-20 flex items-center">
-            <div className="navbar__container flex justify-between items-center max-w-[1300px] w-full mx-auto px-6">
+            <div className="navbar__container flex justify-between items-center w-full max-w-full md:max-w-[1300px] md:mx-auto px-5">
                 {/* Logo */}
-                <Link
-                    to="/"
+                <a
+                    href="/"
                     id="navbar__logo"
-                    className="text-4xl bg-gradient-to-b from-primary via-primary-medium to-primary-light bg-clip-text text-transparent cursor-pointer"
+                    className="text-4xl bg-gradient-to-b from-primary via-primary-medium to-primary-light bg-clip-text text-transparent transition-all duration-300 ease-in-out hover:animate-glow cursor-pointer"
                 >
                     MG
-                </Link>
+                </a>
 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex items-center space-x-8 text-text-primary text-lg">
@@ -26,8 +46,9 @@ export default function Navbar() {
 
                 {/* Mobile Menu Toggle */}
                 <div
+                    ref={toggleRef}
                     id="mobile-menu"
-                    className="md:hidden flex flex-col gap-1 cursor-pointer"
+                    className="md:hidden flex flex-col gap-1 cursor-pointer absolute right-5 top-1/2 -translate-y-1/2"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <span
@@ -50,15 +71,18 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             <ul
-                className={`md:hidden bg-background flex flex-col items-center text-text-primary text-lg transition-all duration-500 overflow-hidden ${
-                    isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
+                ref={menuRef}
+                className={`absolute right-5 top-20 md:hidden bg-[rgba(34,40,49,0.7)] backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl flex flex-col items-center text-text-primary text-lg px-6 py-4 transition-all duration-500 ease-in-out overflow-hidden ${
+                    isOpen 
+                        ? "max-h-80 opacity-100 scale-100"
+                        : "max-h-0 opacity-0 scale-95"
                 }`}
             >
                 <li className="w-full text-center">
                     <a 
                         href="#top"
                         onClick={() => setIsOpen(false)}
-                        className="block py-4 hover:text-primary-medium"
+                        className="block py-3 hover:text-primary-medium"
                     >
                         Home
                     </a>
@@ -67,7 +91,7 @@ export default function Navbar() {
                     <a
                         href="#about__section"
                         onClick={() => setIsOpen(false)}
-                        className="block py-4 hover:text-primary-medium"
+                        className="block py-3 hover:text-primary-medium"
                     >
                         About
                     </a>
@@ -76,7 +100,7 @@ export default function Navbar() {
                     <a
                         href="#experience__section"
                         onClick={() => setIsOpen(false)}
-                        className="block py-4 hover:text-primary-medium"
+                        className="block py-3 hover:text-primary-medium"
                     >
                         Experience
                     </a>
@@ -85,7 +109,7 @@ export default function Navbar() {
                     <a
                         href="#projects__section"
                         onClick={() => setIsOpen(false)}
-                        className="block py-4 hover:text-primary-medium"
+                        className="block py-3 hover:text-primary-medium"
                     >
                         Projects
                     </a>

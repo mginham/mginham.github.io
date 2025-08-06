@@ -47,3 +47,24 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
+
+@layer utilities {
+    @keyframes glow-pulse {
+        0%, 100% {
+            text-shadow:
+                0 0 4px var(--color-primary),
+                0 0 8px var(--color-primary-medium),
+                0 0 12px var(--color-primary-light);
+        }
+        50% {
+            text-shadow:
+                0 0 6px var(--color-primary),
+                0 0 12px var(--color-primary-medium),
+                0 0 18px var(--color-primary-light);
+        }
+    }
+
+    .hover\:animate-glow:hover {
+        animation: glow-pulse 1.5s ease-in-out infinite;
+    }
+}
