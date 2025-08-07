@@ -27,13 +27,26 @@
         "id": "budget-app",
         "title": "Personal Budgeting App",
         "image": "Budget_App_Preview.png",
-        "imagePosition": "object-[center_bottom]",
+        "imagePosition": "object-[center_center]",
         "link": "Budget_App_Demo.html",
         "stack": ["React", "Vite", "Material UI", "Firestore", "JavaScript"],
         "description": "A React-based budgeting tool to track expenses, create custom categories, and visualize spending habits with Material UI components.",
         "demoVideo": "/videos/Budget_App_Demo.mp4",
         "github": "https://github.com/mginham/budget-app",
         "dateCreated": "2025-06-11"
+    },
+    {
+        "id": "portfolio-site",
+        "title": "Personal Portfolio Website",
+        "image": "Portfolio_Site_Preview.png",
+        "imagePosition": "object-[45.7%_center]",
+        "link": "https://mginham.github.io/", 
+        "external": true,
+        "stack": ["React", "Vite", "Tailwind CSS", "GitHub Pages"],
+        "description": "A personal portfolio website showcasing my projects, built with React, Vite, and Tailwind CSS, and deployed via GitHub Pages.",
+        "demoVideo": null,
+        "github": "https://github.com/mginham/mginham.github.io",
+        "dateCreated": "2025-08-06"
     },
     {
         "id": "mixed-reality-game",
