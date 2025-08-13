@@ -563,6 +563,7 @@ mginham.github.io/
 │   ├── assets/              # Image and media files
 │   ├── components/          # Reusable UI components
 │   ├── content/             # Project data and JSON files
+│   ├── readmes/             # Markdown README files for each project, imported and rendered dynamically
 │   ├── App.jsx              # Main application component
 │   ├── main.jsx             # React entry point
 │   └── index.css            # Global styles and Tailwind imports
