@@ -1,14 +1,12 @@
 import { useParams } from 'react-router-dom';
 import projects from '../content/projects.json';
 import PenguinAnimation from './Penguin/PenguinAnimation';
+import ProjectReadme from './ProjectReadme';
 
 export default function ProjectDetail() {
-    const { title } = useParams();
+    const { id } = useParams();
 
-    // Find project by URL param (case-insensitive)
-    const project = projects.find(
-        p => p.title.toLowerCase().replace(/\s+/g, '-') === title.toLowerCase()
-    );
+    const project = projects.find(p => p.id === id);
 
     if (!project) return <p>Project not found.</p>;
 
@@ -16,7 +14,7 @@ export default function ProjectDetail() {
         <section className="max-w-[1300px] mx-auto px-6 my-12">
             <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
 
-            {/* Render penguin animation if this is the penguin project */}
+            {/* Render demo / animation */}
             {project.id === "penguin-animation" ? (
                 <div className="my-8 flex justify-center">
                     <PenguinAnimation />
@@ -48,6 +46,10 @@ export default function ProjectDetail() {
                     View on GitHub
                 </a>
             )}
+
+            {/* Render the README */}
+            <h2 className="text-2xl font-semibold mt-10 mb-3">GitHub README</h2>
+            <ProjectReadme projectId={project.id} />
         </section>
     );
 }

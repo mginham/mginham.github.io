@@ -1,0 +1,146 @@
+/* Base prose styles */
+.prose {
+  color: #d1d5db; /* light gray text */
+  max-width: 100% !important;
+  font-size: 1rem; /* 16px */
+  line-height: 1.75;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: transparent;
+  padding: 1.5em;
+  border: 2px solid #FF9300;
+  border-radius: 0.5rem;
+}
+
+.prose :where(h1, h2, h3, h4, h5, h6) {
+  font-weight: 700;
+  color: #FF9300; /* bright orange headings */
+  scroll-margin-top: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0.8889em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.prose h1 {
+  font-size: 2.25rem; /* 36px */
+  line-height: 1.2;
+}
+
+.prose h2 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.3;
+  padding-top: 1em;
+}
+
+.prose h3 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.375;
+}
+
+.prose p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.prose a {
+  color: #FFB200; /* lighter orange link */
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.prose a:hover {
+  color: #FFD65C; /* even lighter on hover */
+}
+
+.prose ul,
+.prose ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  padding-left: 1.625em;
+}
+
+.prose ul {
+  list-style-type: disc; /* solid bullets */
+}
+
+.prose ol {
+  list-style-type: decimal; /* numbers */
+}
+
+.prose li::marker {
+  color: #FFB200; /* amber/orange bullets and numbers */
+  font-weight: 600;
+}
+
+.prose li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose blockquote {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  padding-left: 1em;
+  border-left: 0.25rem solid #FF9300; /* bright orange border */
+  color: #fbbf24; /* amber-400 text */
+  font-style: italic;
+  background-color: rgba(255, 147, 0, 0.1); /* subtle orange background */
+  border-radius: 0.25rem;
+}
+
+.prose code {
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  color: #FFB200; /* amber/orange */
+}
+
+.prose pre {
+  background-color: #111827; /* very dark */
+  color: #FFB200; /* amber/orange */
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 0.375rem;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  box-shadow:
+    0 0 15px rgba(255, 147, 0, 0.6);
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid #FF9300; /* bright orange */
+  margin: 3em 0;
+}
+
+.prose table {
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+  border-collapse: collapse;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  font-size: 0.875rem;
+  color: #d1d5db; /* light gray */
+}
+
+.prose th,
+.prose td {
+  padding: 0.5em 0.75em;
+  border: 1px solid #FF9300; /* bright orange borders */
+}
+
+.prose th {
+  font-weight: 600;
+  background-color: rgba(255, 147, 0, 0.15); /* subtle orange bg */
+}
+
+.prose img {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  border-radius: 0.375rem;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 15px -3px rgba(255, 147, 0, 0.3),
+              0 4px 6px -4px rgba(255, 147, 0, 0.2);
+}

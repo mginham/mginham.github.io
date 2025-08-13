@@ -11,7 +11,9 @@ export default function Projects() {
             <div className="flex flex-wrap justify-center gap-8">
                 {projects.map((project, index) => (
                     <div key={index} className="w-[360px] h-[350px]">
-                        <Link to={`/projects/${project.title.toLowerCase().replace(/\s+/g, '-')}`}>
+                        <Link 
+                            to={`/projects/${project.id}`}
+                        >
                             <img
                                 src={getImage(project.image)}
                                 alt={project.title}
